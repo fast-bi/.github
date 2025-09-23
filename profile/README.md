@@ -26,7 +26,7 @@
 
 <p align="center">
   <a href="https://fast.bi"><strong>Website</strong></a> •
-  <a href="https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/cli/README.md"><strong>Getting Started</strong></a> •
+  <a href="https://github.com/fast-bi/data-development-platform/blob/master/cli/README.md"><strong>Getting Started</strong></a> •
   <a href="https://wiki.fast.bi"><strong>Documentation</strong></a> •
   <a href="#community"><strong>Community</strong></a>
 </p>
@@ -201,17 +201,17 @@ For detailed CLI documentation, see [CLI Documentation](../../cli/README.md).
 
 Choose your deployment path:
 
-- **🥇 [GCP Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/gcp-deployment.md)** - **Recommended & Fully Tested**
+- **🥇 [GCP Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)** - **Recommended & Fully Tested**
   - Complete infrastructure automation
   - GKE cluster with managed services
   - Best for production deployments
 
-- **🥈 [On-Premise Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/onpremise-deployment.md)** - **Simple & Flexible**
+- **🥈 [On-Premise Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/onpremise-deployment.md)** - **Simple & Flexible**
   - Use your existing Kubernetes cluster
   - Just provide kubeconfig
   - Best for compliance and control
 
-- **🥉 [Deployment Overview](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/deployment-overview.md)** - **Compare all options**
+- **🥉 [Deployment Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/deployment-overview.md)** - **Compare all options**
   - Decision tree for choosing deployment type
   - Feature comparison matrix
   - Prerequisites and requirements
@@ -219,9 +219,9 @@ Choose your deployment path:
 ### Cloud Deployment
 Fast.BI provides Terraform modules for one-click deployment on major cloud providers:
 
-- **GCP**: Deploy on GKE with BigQuery/Snowflake/Redshift ✅ **Production Ready** [(Default)](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/gcp-deployment.md)
-- **AWS**: Deploy on EKS with Redshift/Snowflake/Bigquery 🚧 **80% Ready** [(In Development)](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/aws-deployment.md)
-- **Azure**: Deploy on AKS with Azure Synapse/BigQuery/Snowflake/Redshift 📅 **Q4 2025** [(Planned)](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/azure-deployment.md)
+- **GCP**: Deploy on GKE with BigQuery/Snowflake/Redshift ✅ **Production Ready** [(Default)](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)
+- **AWS**: Deploy on EKS with Redshift/Snowflake/Bigquery 🚧 **80% Ready** [(In Development)](https://github.com/fast-bi/data-development-platform/blob/master/docs/aws-deployment.md)
+- **Azure**: Deploy on AKS with Azure Synapse/BigQuery/Snowflake/Redshift 📅 **Q4 2025** [(Planned)](https://github.com/fast-bi/data-development-platform/blob/master/docs/azure-deployment.md)
 
 ### On-Premise Deployment
 Fast.BI provides Automatic modules for one-click deployment on premise:
@@ -236,19 +236,19 @@ Fast.BI provides Automatic modules for one-click deployment on premise:
 ## 📚 Documentation
 
 ### Getting Started
-- **[CLI Documentation](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/cli/README.md)** - Complete CLI usage guide, prerequisites, and deployment
-- **[Deployment Overview](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/deployment-overview.md)** - Choose your deployment path
+- **[CLI Documentation](https://github.com/fast-bi/data-development-platform/blob/master/cli/README.md)** - Complete CLI usage guide, prerequisites, and deployment
+- **[Deployment Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/deployment-overview.md)** - Choose your deployment path
 
 ### Deployment Guides
-- **[GCP Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/gcp-deployment.md)** - Deploy on Google Cloud Platform ✅ **Production Ready**
-- **[AWS Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/aws-deployment.md)** - Deploy on Amazon Web Services 🚧 **80% Ready**
-- **[Azure Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/azure-deployment.md)** - Deploy on Microsoft Azure 📅 **Q4 2025**
-- **[On-Premise Deployment](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/onpremise-deployment.md)** - Deploy on your infrastructure ✅ **Ready**
+- **[GCP Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)** - Deploy on Google Cloud Platform ✅ **Production Ready**
+- **[AWS Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/aws-deployment.md)** - Deploy on Amazon Web Services 🚧 **80% Ready**
+- **[Azure Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/azure-deployment.md)** - Deploy on Microsoft Azure 📅 **Q4 2025**
+- **[On-Premise Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/onpremise-deployment.md)** - Deploy on your infrastructure ✅ **Ready**
 
 ### Project Information
-- **[Roadmap](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/ROADMAP.md)** - Current status and future plans
-- **[Contributing](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/CONTRIBUTING.md)** - How to contribute to Fast.BI
-- **[Licensing](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/licensing.md)** - License information
+- **[Roadmap](https://github.com/fast-bi/data-development-platform/blob/master/ROADMAP.md)** - Current status and future plans
+- **[Contributing](https://github.com/fast-bi/data-development-platform/blob/master/CONTRIBUTING.md)** - How to contribute to Fast.BI
+- **[Licensing](https://github.com/fast-bi/data-development-platform/blob/master/docs/licensing.md)** - License information
 
 ## 🤝 Community & Support
 
@@ -271,7 +271,7 @@ We welcome contributions from the community! Fast.BI is built on open-source pri
 - 📖 **Improve Docs**: Help make our documentation even better
 - 💡 **Feature Requests**: Share your ideas for new capabilities
 
-See our [Contributing Guide](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/CONTRIBUTING.md) for details.
+See our [Contributing Guide](https://github.com/fast-bi/data-development-platform/blob/master/CONTRIBUTING.md) for details.
 
 ### Join the Community
 
@@ -283,9 +283,9 @@ Join our growing community of data practitioners:
 
 ## 📄 License
 
-Fast.BI platform code is available under the [MIT License](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/LICENSE).
+Fast.BI platform code is available under the [MIT License](https://github.com/fast-bi/data-development-platform/blob/master/LICENSE).
 
-See our [OSS License Overview](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/docs/licensing/) for complete details.
+See our [OSS License Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/licensing/) for complete details.
 
 ## 🌟 Star History
 
@@ -300,7 +300,7 @@ See our [OSS License Overview](https://raw.githubusercontent.com/fast-bi/data-de
 
 ### Thank You
 
-Fast.BI would not be possible without the support and assistance of other open-source tools and companies! Visit our [thank you page](https://raw.githubusercontent.com/fast-bi/data-development-platform/refs/heads/master/THANK-YOU.md) to learn more about how we build Fast.BI.
+Fast.BI would not be possible without the support and assistance of other open-source tools and companies! Visit our [thank you page](https://github.com/fast-bi/data-development-platform/blob/master/THANK-YOU.md) to learn more about how we build Fast.BI.
 
 <a href="https://github.com/fast-bi/data-development-platform/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=fast-bi/data-development-platform"/>
