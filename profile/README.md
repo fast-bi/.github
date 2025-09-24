@@ -165,17 +165,6 @@ Fast.BI platform code is available under the [MIT License](https://github.com/fa
 
 See our [OSS License Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/licensing/) for complete details.
 
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=fast-bi/data-development-platform&type=Date)](https://star-history.com/#fast-bi/data-development-platform&Date)
-
----
-
-<p align="center">
-  <strong>Ready to accelerate your data journey?</strong><br>
-  <a href="https://fast.bi">Get Started with Fast.BI</a>
-</p>
-
 ### Thank You
 
 Fast.BI would not be possible without the support and assistance of other open-source tools and companies! Visit our [thank you page](https://github.com/fast-bi/data-development-platform/blob/master/THANK-YOU.md) to learn more about how we build Fast.BI
