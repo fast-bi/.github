@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://fast.bi">
-    <img src="Logo__Original.png" alt="Fast.BI Logo" width="200">
+    <img src="https://wiki.fast.bi/logo_transparent_original.png" alt="Fast.BI Logo" width="200">
   </a>
 </p>
 
@@ -52,7 +52,7 @@ Fast.BI helps connect everything: with Fast.BI backend services, these tools con
 Fast.BI acts as an intelligent orchestration and automation layer on top of industry-standard open-source tools:
 
 <p align="center">
-  <img src="architecture.png" alt="Fast.BI Architecture Schema" width="800">
+  <img src="https://wiki.fast.bi/architecture.png" alt="Fast.BI Architecture Schema" width="800">
  </p>
 
 | Component | Technology | Purpose |
@@ -128,128 +128,6 @@ python cli.py --help
 # Access Fast.BI at your configured domain
 ```
 
-## 🖥️ Fast.BI CLI
-
-Fast.BI provides a comprehensive command-line interface for deploying and managing the platform across multiple cloud providers.
-
-### CLI Features
-
-- **Multi-Cloud Support**: Deploy on GCP, AWS, Azure, or On-Premises
-- **Phase-Based Deployment**: 6 controlled deployment phases
-- **Interactive & Non-Interactive Modes**: Flexible deployment options
-- **State Management**: Resume deployments from any phase
-- **Service Tracking**: Skip already deployed services
-- **Security**: Encrypted deployment files with key management
-
-### CLI Usage
-
-```bash
-# Interactive deployment (recommended for first-time users)
-python cli.py
-
-# Non-interactive deployment using configuration file
-python cli.py --config cli/deployment_configuration.yaml --non-interactive
-
-# Deploy specific phases only
-python cli.py --phase 1,2,3
-
-# Destroy entire environment
-python cli.py --destroy
-```
-
-### CLI Architecture
-
-Fast.BI follows a clean architecture pattern with separate interfaces for different use cases:
-
-```
-                           ┌─────────────────┐
-                           │   Core Logic    │
-                           │  (Class Files)  │
-                           └───────┬─────────┘
-                                   │
-                    ┌──────────────┴──────────────┐
-                    │                             │
-             ┌──────┴──────┐               ┌──────┴──────┐
-             │     CLI     │               │     API     │
-             │  Interface  │               │  Interface  │
-             └──────┬──────┘               └──────┬──────┘
-                    │                             │
-            ┌───────┴────────┐             ┌──────┴──────┐
-            │  Local Usage   │             │   Frontend  │
-            │(Your Laptop)   │             │(Web Browser)│
-            └────────────────┘             └─────────────┘
-```
-
-**Core Logic**: Shared business logic and deployment management  
-**CLI Interface**: Command-line interface for local development and deployment  
-**API Interface**: REST API for web frontend and automation (future)  
-**Local Usage**: Direct CLI usage on developer machines  
-**Frontend**: Web-based interface for non-technical users (future)
-
-### Deployment Phases
-
-1. **Phase 1**: Infrastructure Deployment (GCP/AWS/Azure/On-Premises)
-2. **Phase 2**: Generate Platform Secrets (Vault, Data Warehouse, Git)
-3. **Phase 3**: Configure Data Platform Repositories
-4. **Phase 4**: Deploy Infrastructure Services (Kubernetes services)
-5. **Phase 5**: Deploy Data Services (Airbyte, dbt, Airflow, etc.)
-6. **Phase 6**: Finalize Deployment (Save to Git, Generate keys)
-
-For detailed CLI documentation, see [CLI Documentation](../../cli/README.md).
-
-### Deployment Guides
-
-Choose your deployment path:
-
-- **🥇 [GCP Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)** - **Recommended & Fully Tested**
-  - Complete infrastructure automation
-  - GKE cluster with managed services
-  - Best for production deployments
-
-- **🥈 [On-Premise Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/onpremise-deployment.md)** - **Simple & Flexible**
-  - Use your existing Kubernetes cluster
-  - Just provide kubeconfig
-  - Best for compliance and control
-
-- **🥉 [Deployment Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/deployment-overview.md)** - **Compare all options**
-  - Decision tree for choosing deployment type
-  - Feature comparison matrix
-  - Prerequisites and requirements
-
-### Cloud Deployment
-Fast.BI provides Terraform modules for one-click deployment on major cloud providers:
-
-- **GCP**: Deploy on GKE with BigQuery/Snowflake/Redshift ✅ **Production Ready** [(Default)](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)
-- **AWS**: Deploy on EKS with Redshift/Snowflake/Bigquery 🚧 **80% Ready** [(In Development)](https://github.com/fast-bi/data-development-platform/blob/master/docs/aws-deployment.md)
-- **Azure**: Deploy on AKS with Azure Synapse/BigQuery/Snowflake/Redshift 📅 **Q4 2025** [(Planned)](https://github.com/fast-bi/data-development-platform/blob/master/docs/azure-deployment.md)
-
-### On-Premise Deployment
-Fast.BI provides Automatic modules for one-click deployment on premise:
-
-- **KubeConfig**: When Kubernetes cluster is ready on any technology (K3S, Talos, Tanzu..) provide kubeconfig to deploy.
-
-### Prerequisites
-- Docker and Docker Compose
-- Kubernetes cluster (for production deployment)
-- Cloud account (AWS/GCP/Azure) for managed services
-
-## 📚 Documentation
-
-### Getting Started
-- **[CLI Documentation](https://github.com/fast-bi/data-development-platform/blob/master/cli/README.md)** - Complete CLI usage guide, prerequisites, and deployment
-- **[Deployment Overview](https://github.com/fast-bi/data-development-platform/blob/master/docs/deployment-overview.md)** - Choose your deployment path
-
-### Deployment Guides
-- **[GCP Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/gcp-deployment.md)** - Deploy on Google Cloud Platform ✅ **Production Ready**
-- **[AWS Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/aws-deployment.md)** - Deploy on Amazon Web Services 🚧 **80% Ready**
-- **[Azure Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/azure-deployment.md)** - Deploy on Microsoft Azure 📅 **Q4 2025**
-- **[On-Premise Deployment](https://github.com/fast-bi/data-development-platform/blob/master/docs/onpremise-deployment.md)** - Deploy on your infrastructure ✅ **Ready**
-
-### Project Information
-- **[Roadmap](https://github.com/fast-bi/data-development-platform/blob/master/ROADMAP.md)** - Current status and future plans
-- **[Contributing](https://github.com/fast-bi/data-development-platform/blob/master/CONTRIBUTING.md)** - How to contribute to Fast.BI
-- **[Licensing](https://github.com/fast-bi/data-development-platform/blob/master/docs/licensing.md)** - License information
-
 ## 🤝 Community & Support
 
 Fast.BI is a fully open-source platform with community-driven development:
@@ -300,8 +178,4 @@ See our [OSS License Overview](https://github.com/fast-bi/data-development-platf
 
 ### Thank You
 
-Fast.BI would not be possible without the support and assistance of other open-source tools and companies! Visit our [thank you page](https://github.com/fast-bi/data-development-platform/blob/master/THANK-YOU.md) to learn more about how we build Fast.BI.
-
-<a href="https://github.com/fast-bi/data-development-platform/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=fast-bi/data-development-platform"/>
-</a>
+Fast.BI would not be possible without the support and assistance of other open-source tools and companies! Visit our [thank you page](https://github.com/fast-bi/data-development-platform/blob/master/THANK-YOU.md) to learn more about how we build Fast.BI
