@@ -159,6 +159,16 @@ Join our growing community of data practitioners:
 - **Documentation**: Comprehensive guides and tutorials
 - **Blog**: Best practices and case studies at [fast.bi/blog](https://fast.bi/blog)
 
+## 👥 Leadership & Support
+
+Fast.BI is led by a dedicated team of data platform experts:
+
+- **Founder**: Gediminas Krištopaitis
+- **Co-Founder**: Lida Shatkovska
+- **Main Support Company**: [Terasky Europe](https://terasky-europe.com/)
+
+Our team brings together deep expertise in data engineering, platform development, and enterprise solutions to deliver a robust, production-ready data development platform.
+
 ## 📄 License
 
 Fast.BI platform code is available under the [MIT License](https://github.com/fast-bi/data-development-platform/blob/master/LICENSE).
